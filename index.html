@@ -24,9 +24,11 @@
     <title>Hello, boostrap!</title>
   </head>
   <body>
+    <!-- slide -->
     <div class="container-fluid fondo d-flex align-items-center justify-content-center">
       <h1 class="text-white">Bootstrap 4</h1>
     </div>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <a class="navbar-brand" href="#"><img src="images/boostrap_logo.svg" width="30" height="30"></a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -55,7 +57,35 @@
         </form>
       </div>
     </nav>
-
+    <div class="container mt-5">
+      <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="images/card-1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images/card-2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images/card-3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- contenido -->
     <div class="container">
         <h1 class="mt-5 text-center text-uppercase font-weight-bold font-italic" >Lorem ipsum dolor sit amet</h1>
         <p class="bg-primary text-white w-25 float-left mr-2 text-justify px-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt fuga voluptatibus a autem adipisci, beatae quidem, vel fugit rerum nesciunt consectetur. Eius illum accusantium iusto pariatur odit dolor deserunt praesentium.</p>
@@ -78,5 +108,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".card").mouseenter(function(){
+          $(this).addClass("bg-primary text-white");
+        });
+        $(".card").mouseout(function(){
+          $(this).removeClass("bg-primary text-white");
+        });
+      });
+    </script>
   </body>
 </html>
