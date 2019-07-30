@@ -27,9 +27,44 @@
     <title>Hello, boostrap!</title>
   </head>
   <body>
-    <!-- slide -->
-    <div class="container-fluid fondo d-flex align-items-center justify-content-center">
-      <h1 class="text-white">Bootstrap 4</h1>
+    <!-- carouse -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"class="active" ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item ">
+          <img class="d-block w-100" src="images/slide-1.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lorem, ipsum dolor sit amet</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit illum obcaecati corporis quod minus expedita velit, ipsa voluptatum eveniet tenetur excepturi accusamus, quia odio numquam recusandae, cupiditate vero debitis facere.</p>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/slide-2.jpg" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lorem, ipsum dolor sit amet</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit illum obcaecati corporis quod minus expedita velit, ipsa voluptatum eveniet tenetur excepturi accusamus, quia odio numquam recusandae, cupiditate vero debitis facere.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/slide-3.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lorem, ipsum dolor sit amet</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit illum obcaecati corporis quod minus expedita velit, ipsa voluptatum eveniet tenetur excepturi accusamus, quia odio numquam recusandae, cupiditate vero debitis facere.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
     </div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
