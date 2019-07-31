@@ -29,16 +29,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto nav-pills">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#seccion1">Seccion 1</a>
+                    <a class="nav-link active" href="#seccion1" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Seccion 1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#seccion2">Seccion 2</a>
+                    <a class="nav-link" href="#seccion2" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Seccion 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#seccion3">Seccion 3</a>
+                    <a class="nav-link" href="#seccion3" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Seccion 3</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#seccion4">Seccion 4</a>
+                    <a class="nav-link" href="#seccion4"data-toggle="tooltip" data-placement="left" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Seccion 4</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -48,6 +48,7 @@
         </div>
     </nav>
     <div class="container">
+        <img src="images/sus.gif" width="200" style="margin-top: 60px;"  data-toggle="tooltip" data-placement="top" title="Suscribete">
         <div id="seccion1">
             <h1 class="display-4">Seccion 1</h1>
             <img src="images/slide-1.jpg" class="img-fluid">
@@ -74,6 +75,11 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
 </body>
 
 </html>
