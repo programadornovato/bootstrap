@@ -67,7 +67,7 @@
       </a>
     </div>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" id="navegacion">
       <a class="navbar-brand" href="#"><img src="images/boostrap_logo.svg" width="30" height="30"></a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -269,5 +269,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $("#navegacion").click(function(){
+        $("#navegacion").removeClass("sticky-top");
+      });
+      $(window).scroll(function(){
+        //alert($(window).scrollTop());
+        if($(window).scrollTop()>1){
+          $("#navegacion").addClass("sticky-top");
+        }
+      });
+    </script>
   </body>
 </html>
