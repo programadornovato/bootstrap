@@ -21,10 +21,10 @@
 
             <div class="tab-pane active" id="aveger1" role="tabpanel" aria-labelledby="home-tab">
                 <div class="row align-items-center">
-                    <div class="col-4">
+                    <div class="col-lg-4 text-center">
                         <img src="images/av-1.jpg" alt="">
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-8 text-center">
                         <h1>Capi America</h1>
                         <p>Steve Rogers nació durante la Depresión y creció, convirtiéndose en un joven débil en una
                             familia pobre. Su padre murió cuando él era un niño; su madre, durante la adolescencia de
@@ -35,10 +35,10 @@
             </div>
             <div class="tab-pane " id="aveger2" role="tabpanel" aria-labelledby="home-tab">
                 <div class="row align-items-center">
-                    <div class="col-4">
+                    <div class="col-lg-4 text-center">
                         <img src="images/av-2.jpg" alt="">
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-8 text-center">
                         <h1>Capi America</h1>
                         <p>Steve Rogers nació durante la Depresión y creció, convirtiéndose en un joven débil en una
                             familia pobre. Su padre murió cuando él era un niño; su madre, durante la adolescencia de
@@ -49,10 +49,10 @@
             </div>
             <div class="tab-pane " id="aveger3" role="tabpanel" aria-labelledby="home-tab">
                 <div class="row align-items-center">
-                    <div class="col-4">
+                    <div class="col-lg-4 text-center">
                         <img src="images/av-3.jpg" alt="">
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-8 text-center">
                         <h1>Capi America</h1>
                         <p>Steve Rogers nació durante la Depresión y creció, convirtiéndose en un joven débil en una
                             familia pobre. Su padre murió cuando él era un niño; su madre, durante la adolescencia de
@@ -67,7 +67,7 @@
         </div>
 
         <div class="row">
-            <div class="col-8 offset-4">
+            <div class="col-lg-8 offset-lg-4">
 
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
@@ -104,6 +104,23 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($(window).width() < 992) {
+                $("#myTab").addClass('nav-justified');
+            } else {
+                $("#myTab").removeClass('nav-justified');
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() < 992) {
+                    $("#myTab").addClass('nav-justified');
+                } else {
+                    $("#myTab").removeClass('nav-justified');
+                }
+
+            });
+        });
+    </script>
 </body>
 
 </html>
