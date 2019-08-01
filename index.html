@@ -1,284 +1,359 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-      .fondo{
-        background: url("images/bg-1.png");
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-      }
-      html{
-        font-size: 16px;
-      }
-      #ejemplo{
-        /* font-size:2rem; */
-      }
-      .jumbotron{
-        background: url("images/jumbotron.jpg");
-      }
-    </style>
-    <title>Hello, boostrap!</title>
-  </head>
-  <body>
-    <!-- carouse -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"class="active" ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item ">
-          <img class="d-block w-100" src="images/slide-1.jpg" alt="First slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Lorem, ipsum dolor sit amet</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit illum obcaecati corporis quod minus expedita velit, ipsa voluptatum eveniet tenetur excepturi accusamus, quia odio numquam recusandae, cupiditate vero debitis facere.</p>
-          </div>
-        </div>
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/slide-2.jpg" alt="Second slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Lorem, ipsum dolor sit amet</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit illum obcaecati corporis quod minus expedita velit, ipsa voluptatum eveniet tenetur excepturi accusamus, quia odio numquam recusandae, cupiditate vero debitis facere.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/slide-3.jpg" alt="Third slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Lorem, ipsum dolor sit amet</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit illum obcaecati corporis quod minus expedita velit, ipsa voluptatum eveniet tenetur excepturi accusamus, quia odio numquam recusandae, cupiditate vero debitis facere.</p>
-          </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    .fondo {
+      background: url("images/bg-1.png");
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    #ejemplo {
+      /* font-size:2rem; */
+    }
+
+    .jumbotron {
+      background: url("images/jumbotron.jpg");
+    }
+  </style>
+  <title>Hello, boostrap!</title>
+</head>
+
+<body>
+  <!-- carouse -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item ">
+        <img class="d-block w-100" src="images/slide-1.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lorem, ipsum dolor sit amet</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit illum obcaecati corporis quod minus
+            expedita velit, ipsa voluptatum eveniet tenetur excepturi accusamus, quia odio numquam recusandae,
+            cupiditate vero debitis facere.</p>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
-      </a>
-    </div>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" id="navegacion">
-      <a class="navbar-brand" href="#"><img src="images/boostrap_logo.svg" width="30" height="30"></a>
-      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-          aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">nosotros</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="#">Cat 1</a>
-              <a class="dropdown-item" href="#">Cat 2</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-    <!-- tarjetas -->
-    <div class="container mt-5">
-      <div class="card-deck">
-          <div class="card">
-            <a href="#"  data-toggle="modal" data-target="#modal1"><img class="card-img-top" src="images/card-1.jpg" alt="Card image cap"></a>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
-                Ver
-              </button>
-
-              <!-- Modal -->
-              <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="modal1Label">Tarjeta 1</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="card">
-            <a href="#"  data-toggle="modal" data-target="#modal2"><img class="card-img-top" src="images/card-2.jpg" alt="Card image cap"></a>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
-                Ver
-              </button>
-
-              <!-- Modal -->
-              <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="modal2Label">Tarjeta 2</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="card">
-            <a href="#"  data-toggle="modal" data-target="#modal3"><img class="card-img-top" src="images/card-3.jpg" alt="Card image cap"></a>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
-                Ver
-              </button>
-
-              <!-- Modal -->
-              <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="modal3Label">Tarjeta 3</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              
-            </div>
-          </div>
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/slide-2.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lorem, ipsum dolor sit amet</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit illum obcaecati corporis quod minus
+            expedita velit, ipsa voluptatum eveniet tenetur excepturi accusamus, quia odio numquam recusandae,
+            cupiditate vero debitis facere.</p>
         </div>
-    </div>
-    <!-- contenido -->
-    <div class="container">
-        <h1 class="mt-5 text-center text-uppercase font-weight-bold font-italic" >Lorem ipsum dolor sit amet</h1>
-        <p class="bg-primary text-white w-25 float-left mr-2 text-justify px-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt fuga voluptatibus a autem adipisci, beatae quidem, vel fugit rerum nesciunt consectetur. Eius illum accusantium iusto pariatur odit dolor deserunt praesentium.</p>
-        <p id="ejemplo">Ejemplo</p>
-        <p class="text-justify">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia fugit.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia fugit.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia fugit.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia fugit.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia fugit.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia fugit.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia fugit.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia fugit.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia fugit.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia fugit.
-        </p>
-    </div>  
-    <!-- jumbotron -->
-    <div class="container text-white">
-      <div class="jumbotron">
-          <h1 class="display-4">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr class="my-4">
-
-          <div class="d-flex justify-content-between align-items-center">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
-          </div>
-
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/slide-3.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lorem, ipsum dolor sit amet</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit illum obcaecati corporis quod minus
+            expedita velit, ipsa voluptatum eveniet tenetur excepturi accusamus, quia odio numquam recusandae,
+            cupiditate vero debitis facere.</p>
+        </div>
       </div>
     </div>
-    <!-- formulario -->
-    <div class="container">
-      <form action="" class="form-inline justify-content-center flex-column flex-md-row">
-        <div class="form-group my-2">
-          <label for=""class="mx-2">Nombre</label>
-          <input type="text" class="form-control" placeholder="Coloca aqui tu nombre">
-        </div>
-        <div class="form-group my-2">
-          <label for=""class="mx-2">Email</label>
-          <input type="text" class="form-control" placeholder="Coloca aqui tu Email">
-        </div>
-        <div class="form-group my-2">
-          <button class="btn btn-primary mx-2">Envia</button>
-        </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" id="navegacion">
+    <a class="navbar-brand" href="#"><img src="images/boostrap_logo.svg" width="30" height="30"></a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">nosotros</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Categorias</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Cat 1</a>
+            <a class="dropdown-item" href="#">Cat 2</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
+  </nav>
+  <!-- tarjetas -->
+  <div class="container mt-5">
+    <div class="card-deck">
+      <div class="card">
+        <a href="#" data-toggle="modal" data-target="#modal1"><img class="card-img-top" src="images/card-1.jpg"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
-    <div class="container mt-3">
-        <div class="row">
-          <div class="col">
-            <h3 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus soluta quibusdam et quod quis doloribus, delectus dolorem atque officia molestiae quam veritatis? Rerum error facere magnam velit fuga iste laboriosam.</p>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+            Ver
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal1Label">Tarjeta 1</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  This is a longer card with supporting text below as a natural lead-in to additional content. This
+                  content is a little bit longer.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
+
+
         </div>
-    </div>  
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      $("#navegacion").click(function(){
-        $("#navegacion").removeClass("sticky-top");
-      });
-      $(window).scroll(function(){
-        //alert($(window).scrollTop());
-        if($(window).scrollTop()>1){
-          $("#navegacion").addClass("sticky-top");
-        }
-      });
-    </script>
-  </body>
+      </div>
+      <div class="card">
+        <a href="#" data-toggle="modal" data-target="#modal2"><img class="card-img-top" src="images/card-2.jpg"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
+            Ver
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal2Label">Tarjeta 2</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  This is a longer card with supporting text below as a natural lead-in to additional content. This
+                  content is a little bit longer.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="card">
+        <a href="#" data-toggle="modal" data-target="#modal3"><img class="card-img-top" src="images/card-3.jpg"
+            alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
+            Ver
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal3Label">Tarjeta 3</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  This is a longer card with supporting text below as a natural lead-in to additional content. This
+                  content is a little bit longer.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contenido -->
+  <div class="container">
+    <h1 class="mt-5 text-center text-uppercase font-weight-bold font-italic">Lorem ipsum dolor sit amet</h1>
+    <p class="bg-primary text-white w-25 float-left mr-2 text-justify px-3">Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Deserunt fuga voluptatibus a autem adipisci, beatae quidem, vel fugit rerum nesciunt
+      consectetur. Eius illum accusantium iusto pariatur odit dolor deserunt praesentium.</p>
+    <p id="ejemplo">Ejemplo</p>
+    <p class="text-justify">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur
+      veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia
+      fugit.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur
+      veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia
+      fugit.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur
+      veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia
+      fugit.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur
+      veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia
+      fugit.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur
+      veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia
+      fugit.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur
+      veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia
+      fugit.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur
+      veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia
+      fugit.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur
+      veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia
+      fugit.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur
+      veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia
+      fugit.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae, repellendus voluptatum id culpa consequatur
+      veniam inventore itaque quidem illum labore excepturi praesentium voluptas quaerat facere odit magni officia
+      fugit.
+    </p>
+  </div>
+  <!-- jumbotron -->
+  <div class="container text-white">
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+        featured content or information.</p>
+      <hr class="my-4">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!-- formulario -->
+  <div class="container">
+    <form class="form-inline justify-content-center flex-column flex-md-row" action="https://programadornovato.ipzmarketing.com/f/N34AvtntWKA" accept-charset="UTF-8" method="post">
+      <input name="utf8" type="hidden" value="&#x2713;" />
+      <div class="form-group my-2">
+        <label for="" class="mx-2">Nombre</label>
+        <input class="form-control string optional" type="text" name="subscriber[name]" id="subscriber_name" />
+      </div>
+      <div class="form-group my-2">
+        <label for="" class="mx-2">Email</label>
+        <input class="form-control" type="email" name="subscriber[email]" id="subscriber_email" />
+        <input type="text" name="anotheremail" id="anotheremail" style="position: absolute; left: -5000px" tabindex="-1" autocomplete="off" />
+      </div>
+      <div class="form-group my-2">
+          <input type="submit" name="commit" value="Enviar" class="btn btn-primary" data-disable-with="Procesando" />
+      </div>
+    </form>
+  </div>
+<!-- 
+  <form class="simple_form form form-vertical" novalidate="novalidate" id="new_subscriber"
+    action="https://programadornovato.ipzmarketing.com/f/N34AvtntWKA" accept-charset="UTF-8" method="post">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+
+    <div class="form-group email required subscriber_email"><label class="control-label email required"
+        for="subscriber_email"><abbr title="Requerido"> </abbr> Email</label>
+        <input class="form-control string email required" type="email" name="subscriber[email]" id="subscriber_email" />
+      </div>
+
+    <div class="form-group string optional subscriber_name"><label class="control-label string optional"
+        for="subscriber_name">Nombre</label>
+        <input class="form-control string optional" type="text" name="subscriber[name]" id="subscriber_name" />
+      </div>
+    <input type="text" name="anotheremail" id="anotheremail" style="position: absolute; left: -5000px" tabindex="-1" autocomplete="off" />
+    <div class="submit-wrapper">
+      <input type="submit" name="commit" value="Enviar" class="btn btn-primary" data-disable-with="Procesando" />
+    </div>
+  </form>
+ -->
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col">
+        <h3 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus soluta quibusdam et quod quis doloribus,
+          delectus dolorem atque officia molestiae quam veritatis? Rerum error facere magnam velit fuga iste laboriosam.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $("#navegacion").click(function () {
+      $("#navegacion").removeClass("sticky-top");
+    });
+    $(window).scroll(function () {
+      //alert($(window).scrollTop());
+      if ($(window).scrollTop() > 1) {
+        $("#navegacion").addClass("sticky-top");
+      }
+    });
+  </script>
+</body>
+
 </html>
