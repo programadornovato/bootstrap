@@ -10,10 +10,49 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        .sticky-top1 {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1020;
+        }
+        .sticky-top2 {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 54px;
+            z-index: 1020;
+        }
+    </style>
     <title>Hello, boostrap!</title>
 </head>
 
 <body>
+    <div class="container-fluid bg-success" style="height: 250px;"></div>
+    <nav class="navbar navbar-light bg-light sticky-top1">
+        <form class="form-inline">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+        </form>
+    </nav>
+    <div class="container-fluid bg-success" style="height: 250px;"></div>
+    <nav class="navbar navbar-dark bg-dark sticky-top2">
+        <form class="form-inline">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+        </form>
+    </nav>
+    <div class="container-fluid bg-danger" style="height: 2500px;"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
